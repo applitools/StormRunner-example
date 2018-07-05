@@ -1,0 +1,20 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chromedriver": "^2.35.0",
+    "eyes.sdk": "0.0.68",
+    "eyes.selenium": "0.0.53",
+    "mocha": "^5.2.0",
+    "selenium-webdriver": "^3.6.0"
+  }
+}
