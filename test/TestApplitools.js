@@ -27,7 +27,7 @@ describe('DEMO Applitools StormRunner', function () {
      driver = new webdriver
      .Builder()
      .withCapabilities(capabilities)
-     .usingServer("https://ftaas.saas.hpe.com/wd/hub/")
+     .usingServer("Your_SRF_URL")
      //.setProxy(proxy.manual({""}))
      .build();
     driver.get('http://applitools.com/').then(function() {
@@ -38,7 +38,6 @@ describe('DEMO Applitools StormRunner', function () {
   	
    it('Take a screenshot', function (done) {
       eyes.open(driver, 'DEMO Applitools StormRunner', 'DEMO Applitools StormRunner',{width: 800, height: 600} );
-      // driver.get('https://www.google.com/'); 
       eyes.checkWindow("Applitools");
       eyes.close(false);
       driver.quit().then(done);
